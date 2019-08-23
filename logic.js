@@ -40,3 +40,46 @@ $('#submit').on('click', () => {
     $('#quest5').val("");
   }
 });
+
+
+function findFriend(scores) {
+
+  $.get('/api/friends', (friends) => {
+
+    let count = 0;
+    let arrayLength = friends.length;
+
+    for (var i = 0; i < arrayLength; i++) {
+      calcScoreDiff(scores, friends[i]);
+      count++;
+    }
+
+    if (count === arrayLength) {
+      $('#friendName').text(bestFriend.name);
+      $('#friendImg').attr('src', bestFriend.image);
+      $('#myModal').modal('toggle');
+    }
+  });
+}
+
+
+function calcScoreDiff(user, friend) {
+
+  let diff = 0;
+  let count = 0;
+
+  for (var i = 0; i < 5; i++) {
+    diff += Math.abs(user[i] - friend.scores[i]);
+    count++;
+  }
+
+  if (count === 5) {
+    if (diff < bestFriend.diff) {
+      bestFriend.diff = diff;
+      bestFriend.name = friend.name;
+      bestFriend.image = friend.photo;
+    } else {
+      return;
+    }
+  }
+}
