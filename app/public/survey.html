@@ -40,28 +40,55 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="btn btn-primary btn-block" id="submit">
-    <h4><span class="glyphicon glyphicon-question-sign"></span> Find your friend</h4>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">And your best match is...</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id='friendName'></p>
+          <img id='friendImg' src="" height='200'>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <hr>
-  <div>
-    <a href="/api/friends">API Friends List</a>
-    <span>|</span>
-    <a href="https://github.com/suresh7127/Friend-Finder.git">Github Repo</a>
-  </div>
-  <br>
+
+  <div class="container">
+    <h1>Survey Questions</h1>
+    <p>Take a quick survey to find your perfect match! These questions are answered by the numbers 1 through 5. If you
+      really, really disagree with the statement, your answer would be 1. If you find a statement to hit extremely close
+      to home, put in a 5.</p>
+    <hr>
+    <h3>About You</h3>
+    <div class="form-group">
+      <label for="Name">Name (Required)</label>
+      <input type="text" class='form-control' id='name' placeholder="Barak Obama">
+    </div>
+    <div class="form-group">
+      <label for="image">Link to Photo Image (Required)</label>
+      <input type="text" class='form-control' id='image'
+        placeholder="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/BarackObama2005portrait_edit2.jpg/1200px-BarackObama2005portrait_edit2.jpg">
+    </div>
+    <hr>
+
+
+    <div class="btn btn-primary btn-block" id="submit">
+      <h4><span class="glyphicon glyphicon-question-sign"></span> Find your friend</h4>
+    </div>
+    <hr>
+    <div>
+      <a href="/api/friends">API Friends List</a>
+      <span>|</span>
+      <a href="https://github.com/suresh7127/Friend-Finder.git">Github Repo</a>
+    </div>
+    <br>
 
   </div>
 
