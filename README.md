@@ -29,3 +29,12 @@ This App was made working with the help of following dependencies:
 * The survey page will tell the user to input his/her name and provide a link to his/her      picture.
 * The user will then complete the survey questions that follows based on their degree of stisfaction.
 * The App will then display the best match of user with the name and picture of their best friend.
+
+## Developer's perspectives:
+1. server.js file requires npm packages listed abobe which has been installed successfully.
+2. There are two main routes in this application:
+* htmlRoutes which includes a get route to survey page.
+* apiRoutes which contain a get route to api/friends containing JSON of all possible friends.
+* It also contains a POST routes to api/friends which handle incoming survey results. This route is also routed to logis.js file which handles the compability logic.
+* Application's data are saved inside of a friends.js file as an array of objects.
+* The logic.js handles the compability of friens and display the result as a modal pop-up.
