@@ -22,4 +22,10 @@ This App was made working with the help of following dependencies:
 * express
 * path
 
+## What will user Do?
 
+* The user will first visit the home page. The home page will tell them to take the survey.
+* The user will be directed to survey page whem they click on the survey button.
+* The survey page will tell the user to input his/her name and provide a link to his/her      picture.
+* The user will then complete the survey questions that follows based on their degree of stisfaction.
+* The App will then display the best match of user with the name and picture of their best friend.
