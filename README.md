@@ -10,7 +10,7 @@
 ## SEE THE DEMO 
 
 ## View Sharable link below!!
-![Friender finder video](https://drive.google.com/file/d/1zHd3PDzU3L0fmrXyWgsqkyH8Et4zL8lo/view "frinder finder")
+https://drive.google.com/file/d/1zHd3PDzU3L0fmrXyWgsqkyH8Et4zL8lo/view 
 
 ## Description
 
