@@ -10,7 +10,11 @@
 ## SEE THE DEMO 
 
 ## View Sharable link below!!
-https://drive.google.com/file/d/1zHd3PDzU3L0fmrXyWgsqkyH8Et4zL8lo/view 
+
+
+<p align='center'>
+<img src='https://drive.google.com/file/d/1zHd3PDzU3L0fmrXyWgsqkyH8Et4zL8lo/view' width='600' alt='npm start'>
+</p>
 
 ## Description
 
